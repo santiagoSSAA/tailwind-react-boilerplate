@@ -10,18 +10,7 @@ import { createClient } from "@supabase/supabase-js";
 
 console.log(process.env);
 
-const apiKey = process.env.REACT_APP_SUPABASE_SERVICE_ROLE_KEY;
-const projectUrl = process.env.REACT_APP_SUPABASE_URL;
-const supabase = createClient(projectUrl,apiKey);
-
 const App = () => {
-  getCountries();
-  
-  async function getCountries(){
-    const {data} = await supabase.from("countries").select();
-    console.log(data); 
-  }
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
