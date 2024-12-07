@@ -8,8 +8,10 @@ import Footer from './components/Footer';
 
 import { createClient } from "@supabase/supabase-js";
 
-const apiKey = process.env.SUPABASE_ANON_KEY;
-const projectUrl = process.env.SUPABASE_URL;
+console.log(process.env);
+
+const apiKey = process.env.REACT_APP_SUPABASE_SERVICE_ROLE_KEY;
+const projectUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabase = createClient(projectUrl,apiKey);
 
 const App = () => {
