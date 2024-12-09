@@ -1,16 +1,17 @@
 import React from 'react';
+import { HEADER_CONTENT } from './HeaderTexts';
 
 const Header = () => {
   return (
     <header className="bg-white shadow-md fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-blue-600">FitWithMe</h1>
+        <h1 className="text-3xl font-bold text-blue-600">{HEADER_CONTENT.title}</h1>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
-            {['Home', 'Services', 'Testimonials', 'Contact'].map((item) => (
-              <li key={item}>
-                <a href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-blue-600 transition duration-300">
-                  {item}
+            {HEADER_CONTENT.navBarOptions.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`} className="text-gray-600 hover:text-blue-600 transition duration-300">
+                  {item.name}
                 </a>
               </li>
             ))}
