@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -6,7 +6,8 @@ import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
-import { createClient } from "@supabase/supabase-js";
+import { SpeedInsights } from '@vercel/speed-insights/react';
+/* import { createClient } from "@supabase/supabase-js"; */
 
 console.log(process.env);
 
@@ -21,6 +22,7 @@ const App = () => {
         <ContactForm />
       </main>
       <Footer />
+      <SpeedInsights />
     </div>
   );
 };
