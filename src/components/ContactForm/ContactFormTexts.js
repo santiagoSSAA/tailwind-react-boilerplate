@@ -1,7 +1,11 @@
+import { Facebook, Instagram, MessageCircleMore } from 'lucide-react';
+
 export const CONTACT_FORM_CONTENT = {
-    "subtitle": "Manda tu correo",
-    "name": "Nombre",
-    "email": "E-mail",
-    "message": "Mensaje",
-    "button_message": "Enviar"
+    title: "¡Conectemos!",
+    subtitle: "Contáctanos en tu plataforma favorita",
+    socials: [
+        { name: "WhatsApp", icon: MessageCircleMore, url: "https://wa.me/1234567890", color: "green" },
+        { name: "Facebook", icon: Facebook, url: "https://facebook.com", color: "blue" },
+        { name: "Instagram", icon: Instagram, url: "https://instagram.com", color: "pink" },
+  ]
 };
