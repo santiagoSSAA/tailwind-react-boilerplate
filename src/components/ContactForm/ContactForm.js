@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CONTACT_FORM_CONTENT } from './ContactFormTexts';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -20,10 +21,10 @@ const ContactForm = () => {
   return (
     <section id="contact" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Get In Touch</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">{CONTACT_FORM_CONTENT.subtitle}</h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
           <div className="mb-6">
-            <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">Name</label>
+            <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">{CONTACT_FORM_CONTENT.name}</label>
             <input
               type="text"
               id="name"
@@ -35,7 +36,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Email</label>
+            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">{CONTACT_FORM_CONTENT.email}</label>
             <input
               type="email"
               id="email"
@@ -47,7 +48,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
+            <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">{CONTACT_FORM_CONTENT.message}</label>
             <textarea
               id="message"
               name="message"
@@ -59,7 +60,7 @@ const ContactForm = () => {
             ></textarea>
           </div>
           <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-blue-600 transition duration-300">
-            Send Message
+            {CONTACT_FORM_CONTENT.button_message}
           </button>
         </form>
       </div>

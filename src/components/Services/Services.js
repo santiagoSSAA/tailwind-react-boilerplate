@@ -1,5 +1,5 @@
 import React from 'react';
-import { SERVICES_CONTENT } from './ServicesText';
+import { SERVICES_CONTENT } from './ServicesTexts';
 
 const Services = () => {
   return (

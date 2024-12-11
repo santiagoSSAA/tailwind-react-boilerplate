@@ -2,14 +2,12 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';
-import Testimonials from './components/Testimonials';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
+import Testimonials from './components/Testimonials/Testimonials';
+import ContactForm from './components/ContactForm/ContactForm';
+import Footer from './components/Footer/Footer';
 
 import { SpeedInsights } from '@vercel/speed-insights/react';
 /* import { createClient } from "@supabase/supabase-js"; */
-
-console.log(process.env);
 
 const App = () => {
   return (
