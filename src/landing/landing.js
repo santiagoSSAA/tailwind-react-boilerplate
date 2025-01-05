@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 /* import { createClient } from "@supabase/supabase-js"; */
 
-const App = () => {
+const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -25,5 +25,4 @@ const App = () => {
   );
 };
 
-export default App;
-
+export default Landing;
